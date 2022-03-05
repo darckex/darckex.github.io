@@ -18,14 +18,13 @@ $(document).ready(function () {
 		navigation: true,
 		anchors: [
 			"Home",
-			"Features",
 			"About",
-			// "Video",
-			"Clients",
+			"Features",
 			"Screenshots",
-			"Pricing",
+			"Clients",
 			"Download",
 			"Contact"
+			// "Video"
 		],
 		navigationPosition: "left"
 	})
