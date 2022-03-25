@@ -1,0 +1,10 @@
+- change order {
+	Home,
+	about,
+	features,
+	screenshots,
+	clients,
+	remove pricing,
+	download,
+	contact us
+}
