@@ -1,0 +1,12 @@
+.cart-shop {
+	padding: $pagePadding;
+	display: grid;
+	gap: 10px;
+
+	.clear {
+		justify-self: end;
+		color: $primary;
+		font-weight: bold;
+		padding: 5px 0 5px;
+	}
+}

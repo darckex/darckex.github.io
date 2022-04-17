@@ -1,0 +1,16 @@
+// colors
+$bgColor: hsl(0, 87%, 97%);
+$primary: hsl(0, 84%, 53%);
+$secondary: hsl(211deg 99% 60%);
+$light: hsl(0, 0, 90%);
+$textColor: hsl(0, 0, 22);
+$textOffset: lighten($textColor, 50);
+
+// spacing
+$pagePadding: 10px;
+
+// shadows
+$paperShadow: rgba(black, 0.08) 0px 4px 12px;
+
+// border-radius
+$borderRadius: 5px;

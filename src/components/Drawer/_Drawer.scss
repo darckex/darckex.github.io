@@ -1,0 +1,29 @@
+.drawer {
+	position: fixed;
+	inset: 0;
+	transition: 0.3s;
+	pointer-events: none;
+	opacity: 0;
+	z-index: 1;
+	&.active {
+		opacity: 1;
+		pointer-events: all;
+		.body {
+			transform: translateY(0);
+		}
+	}
+	.header {
+		padding: $pagePadding;
+		font-weight: bold;
+		border-bottom: 1px solid $light;
+	}
+	.body {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		background-color: $bgColor;
+		transition: 0.3s;
+		transform: translateY(100%);
+	}
+}

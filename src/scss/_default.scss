@@ -1,0 +1,33 @@
+body {
+	height: 100vh;
+	background-color: $bgColor;
+}
+
+.app {
+	height: 100vh;
+	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
+
+	> .screen {
+		flex-grow: 1;
+		overflow: hidden;
+	}
+	.pages {
+		height: 100%;
+		z-index: 0;
+	}
+}
+
+.overlay {
+	background-color: rgba(black, 0.3);
+	position: absolute;
+	inset: 0;
+}
+
+.paper {
+	padding: 10px;
+	border-radius: $borderRadius;
+	background-color: white;
+	box-shadow: $paperShadow;
+}

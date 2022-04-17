@@ -1,0 +1,50 @@
+.offer-item {
+	background-color: white;
+	border-radius: $borderRadius;
+	overflow: hidden;
+	box-shadow: $paperShadow;
+	&.small {
+		display: flex;
+		.img {
+			width: 100px;
+			flex: 0 0;
+		}
+	}
+
+	a {
+		display: flex;
+	}
+
+	.img {
+		flex-grow: 1;
+		width: 100%;
+		object-fit: contain;
+		background-color: black;
+	}
+
+	.info {
+		padding: 10px;
+		display: grid;
+		gap: 10px;
+		flex-grow: 1;
+	}
+	.name {
+		font-weight: bold;
+		color: $primary;
+	}
+	.price-holder {
+		display: flex;
+		gap: 10px;
+
+		.old-price {
+			color: gray;
+			text-decoration: line-through;
+		}
+	}
+	.end {
+		font-weight: bold;
+		span {
+			color: $primary;
+		}
+	}
+}

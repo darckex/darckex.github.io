@@ -1,0 +1,50 @@
+.overpage {
+	position: fixed;
+	height: 100vh;
+	inset: 0;
+	display: flex;
+	flex-direction: column;
+	background-color: $bgColor;
+	z-index: 2;
+	transition: 0.3s;
+	transform: translateX(100%);
+	overflow: hidden;
+	&.active {
+		transform: translateX(0);
+	}
+
+	> .header {
+		grid-area: header;
+	}
+
+	.head-holder {
+		padding: 10px 10px 0;
+	}
+	.head {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+		background-color: white;
+		box-shadow: 0 -10px 0 0 $bgColor, $paperShadow;
+		border-radius: $borderRadius;
+		overflow: hidden;
+
+		.icon-back {
+			padding: 10px 15px;
+			font-size: 1.5rem;
+			color: $primary;
+		}
+		.icon-close {
+			padding: 10px 15px;
+			color: $primary;
+			font-size: 1.5rem;
+		}
+		.name {
+			color: $primary;
+			font-weight: bold;
+			font-size: 1.2rem;
+			letter-spacing: 0.3px;
+		}
+	}
+}

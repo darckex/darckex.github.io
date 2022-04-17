@@ -1,0 +1,9 @@
+:root {
+	--position: 0;
+}
+.stage {
+	height: 100%;
+	width: 100vw;
+	transition: 0.3s;
+	transform: translateX(calc(100% * var(--position) * -1));
+}

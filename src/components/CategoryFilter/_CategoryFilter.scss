@@ -1,0 +1,18 @@
+.category-filter {
+	.flex {
+		width: 100%;
+		overflow: auto;
+		display: flex;
+		gap: 5px;
+		padding: 10px 0;
+	}
+	.tag {
+		background-color: white;
+		color: $primary;
+		box-shadow: $paperShadow;
+		&.active {
+			background-color: $primary;
+			color: white;
+		}
+	}
+}

@@ -1,0 +1,23 @@
+.orders {
+	padding: $pagePadding;
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+
+	.filter {
+		display: flex;
+		gap: 10px;
+		width: 100%;
+
+		.tag {
+			background-color: white;
+			color: $primary;
+			box-shadow: $paperShadow;
+			flex-grow: 1;
+			&.active {
+				background-color: $primary;
+				color: white;
+			}
+		}
+	}
+}
